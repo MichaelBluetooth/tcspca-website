@@ -46,7 +46,7 @@ export const routes: Routes = [
                 }
             },
             {
-                path: 'all-animals',
+                path: 'other-animals',
                 component: AllAnimalsComponent,
                 data: {
                     title: 'Other Animals for Adoption'
@@ -74,7 +74,7 @@ export const routes: Routes = [
                 }
             },
             {
-                path: 'other-animals',
+                path: 'all-animals',
                 component: OtherAnimalsComponent,
                 data: {
                     title: 'All Animals for Adoption'

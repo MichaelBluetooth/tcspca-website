@@ -12,33 +12,33 @@ export type MENU_ITEM_TYPES = 'adopt' | 'support' | 'services' | 'get-involved' 
   styleUrl: './header.component.scss'
 })
 export class HeaderComponent {
-  @ViewChildren('.menu-item', {read: ElementRef}) menuItems!: QueryList<ElementRef>;
+  @ViewChildren('.menu-item', { read: ElementRef }) menuItems!: QueryList<ElementRef>;
 
   selectedMenu: MENU_ITEM_TYPES = null;
   previousItem: any;
 
-  showNav(selectedMenu: MENU_ITEM_TYPES, item: HTMLAnchorElement){
+  showNav(selectedMenu: MENU_ITEM_TYPES, item: HTMLAnchorElement) {
     const elements: any = document.getElementsByClassName('menu-item');
     for (const element of elements) {
-        element.classList.remove('menu-item-active');
+      element.classList.remove('menu-item-active');
     }
 
-    if(this.previousItem === item){
+    if (this.previousItem === item) {
       this.selectedMenu = null;
       this.previousItem = null;
-    }else{
+    } else {
       this.previousItem = item;
       item.classList.add('menu-item-active');
-      this.selectedMenu = selectedMenu;      
-    }    
+      this.selectedMenu = selectedMenu;
+    }
   }
 
-  hideNav(){
+  hideNav() {
     this.selectedMenu = null;
     this.previousItem = null;
     const elements: any = document.getElementsByClassName('menu-item');
     for (const element of elements) {
-        element.classList.remove('menu-item-active');
+      element.classList.remove('menu-item-active');
     }
   }
 }
