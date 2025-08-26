@@ -5,11 +5,10 @@ import { CommonModule } from '@angular/common';
 export type MENU_ITEM_TYPES = 'adopt' | 'support' | 'services' | 'get-involved' | null;
 
 @Component({
-  selector: 'spca-header',
-  standalone: true,
-  imports: [CommonModule, NavPanelComponent],
-  templateUrl: './header.component.html',
-  styleUrl: './header.component.scss'
+    selector: 'spca-header',
+    imports: [CommonModule, NavPanelComponent],
+    templateUrl: './header.component.html',
+    styleUrl: './header.component.scss'
 })
 export class HeaderComponent {
   @ViewChildren('.menu-item', { read: ElementRef }) menuItems!: QueryList<ElementRef>;

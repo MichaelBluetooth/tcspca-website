@@ -1,11 +1,10 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'spca-other-animals',
-  standalone: true,
-  imports: [],
-  templateUrl: './other-animals.component.html',
-  styleUrl: './other-animals.component.scss'
+    selector: 'spca-other-animals',
+    imports: [],
+    templateUrl: './other-animals.component.html',
+    styleUrl: './other-animals.component.scss'
 })
 export class OtherAnimalsComponent {
 

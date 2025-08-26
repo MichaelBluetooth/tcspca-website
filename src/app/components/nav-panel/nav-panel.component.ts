@@ -3,11 +3,10 @@ import { MENU_ITEM_TYPES } from '../header/header.component';
 import { CommonModule } from '@angular/common';
 
 @Component({
-  selector: 'spca-nav-panel',
-  standalone: true,
-  imports: [CommonModule],
-  templateUrl: './nav-panel.component.html',
-  styleUrl: './nav-panel.component.scss'
+    selector: 'spca-nav-panel',
+    imports: [CommonModule],
+    templateUrl: './nav-panel.component.html',
+    styleUrl: './nav-panel.component.scss'
 })
 export class NavPanelComponent {
   @Input() selectedMenu: MENU_ITEM_TYPES = null;
