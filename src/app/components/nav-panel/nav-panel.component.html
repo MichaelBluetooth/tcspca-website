@@ -1,0 +1,141 @@
+<div class="menu-container" *ngIf="selectedMenu">
+    <div class="links-container">
+        <ng-container *ngIf="selectedMenu === 'adopt'">
+            <h3 class="menu-header">Adoptions</h3>
+            <a class="no-style menu-item link" href="/adopting-pets">
+                Adopting your new pet
+            </a>
+            <a class="no-style menu-item link" href="/dogs">
+                Available Dogs
+            </a>
+            <a class="no-style menu-item link" href="/cats">
+                Available Cats
+            </a>
+            <a class="no-style menu-item link" href="/other-animals">
+                Other Companion Animals
+            </a>
+            <a class="no-style menu-item link" href="/all-animals">
+                All Available Animals
+            </a>
+            <a class="no-style menu-item link" href="/tcac">
+                Report a Stray
+            </a>
+        </ng-container>
+        <ng-container *ngIf="selectedMenu === 'support'">
+            <h3 class="menu-header">Support the SPCA</h3>
+            <a class="no-style menu-item link" href="/gifts">
+                Make a gift online
+            </a>
+            <a class="no-style menu-item link" href="/tiles">
+                Memorial and tribute tiles
+            </a>
+            <a class="no-style menu-item link" href="/planned-giving">
+                Planned Giving
+            </a>
+            <a class="no-style menu-item link" href="/needed-items">
+                Urgently Needed Items
+            </a>
+            <a class="no-style menu-item link" href="/fundraisers">
+                Organize a Fundraiser
+            </a>
+            <a class="no-style menu-item link" href="/businesses-that-care">
+                Businesses That Care
+            </a>
+            <a class="no-style menu-item link" href="/other-help">
+                Other Ways To Help
+            </a>
+        </ng-container>
+        <ng-container *ngIf="selectedMenu === 'services'">
+            <h3 class="menu-header">Support the SPCA</h3>
+            <a class="no-style menu-item link" href="/lost-and-found">
+                Lost or found animals
+            </a>
+            <a class="no-style menu-item link" href="/tcac">
+                Tompkins County Animal Control
+            </a>
+            <a class="no-style menu-item link" href="/tcac">
+                Stray Dogs and Injured Animals
+            </a>
+            <a class="no-style menu-item link" href="/tcac">
+                Reporting animal cruelty
+            </a>
+            <a class="no-style menu-item link" href="/tcac">
+                Feral cats and TNR
+            </a>
+            <a class="no-style menu-item link" href="/tcac">
+                Wildlife
+            </a>
+            <a class="no-style menu-item link" href="/surrender-pet">
+                Surrendering a Pet
+            </a>
+            <a class="no-style menu-item link" href="/spay-neuter">
+                Spay and neuter program
+            </a>
+            <a class="no-style menu-item link" href="/education">
+                Humane education and youth
+            </a>
+            <a class="no-style menu-item link" href="/classes">
+                Training and Socialization Classes
+            </a>
+            <a class="no-style menu-item link" href="/rabies-clinics">
+                Free rabies clinics
+            </a>
+            <a class="no-style menu-item link" href="/vet-care">
+                Veterinary care
+            </a>
+            <a class="no-style menu-item link" href="/partners">
+                Our partners
+            </a>
+        </ng-container>
+        <ng-container *ngIf="selectedMenu === 'get-involved'">
+            <h3 class="menu-header">About the SPCA</h3>
+            <a class="no-style menu-item link" href="/about">
+                Our History and Mission
+            </a>
+            <a class="no-style menu-item link" href="/staff">
+                Our Staff
+            </a>
+            <a class="no-style menu-item link" href="/board">
+                Board of Directors
+            </a>
+            <a class="no-style menu-item link" href="/jobs">
+                Job openings
+            </a>
+            <a class="no-style menu-item link" href="/stats">
+                Statistics
+            </a>
+
+            <h3 class="menu-header">SPCA Superstars</h3>
+            <a class="no-style menu-item link" href="/volunteer">
+                volunteer
+            </a>
+            <a class="no-style menu-item link" href="/foster-family">
+                Become a Foster Family
+            </a>
+            <a class="no-style menu-item link" href="/community-service">
+                Community Service
+            </a>
+        </ng-container>
+    </div>
+    <div class="contact-container">
+        <h3 class="menu-header">Adoption center</h3>
+        <div class="menu-item">
+            1640 Hanshaw Road
+            Ithaca, NY 14850
+        </div>
+        <div class="menu-item">
+            PHONE: (607) 257-1822
+        </div>
+        <div class="menu-item">
+            FAX: (607) 257-5470
+        </div>
+        <div class="menu-item">
+            EMAIL: <a class="no-style link" href="mailto:info&#64;spcaonline.com">info&#64;spcaonline.com</a>
+        </div>
+
+        <h3 class="menu-header" style="padding-top: 15px">Hours</h3>
+        <div class="menu-item">
+            Mon: By Appointment Only | Tues: Closed | Wed: 12-4:30PM | Thur: 12-6:30PM | Fri-Sun: 12-4:30PM
+        </div>
+    </div>
+</div>

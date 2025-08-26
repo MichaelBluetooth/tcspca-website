@@ -1,0 +1,107 @@
+@use '../../../variables.scss' as vars;
+
+.header {
+    height: 64px;
+    width: 100%;
+    display: flex;
+    background-color: vars.$color-primary;
+    
+    font-family: vars.$font-header;
+    color: white;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    line-height: 1;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-items {
+    display: flex;
+    align-items: center;    
+    height: 100%;
+}
+
+.header-item {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    border-right: rgba(255, 255, 255, 0.35) solid 1px;
+    padding: 20px;
+}
+
+.header-link {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.header-link:hover, .social-media-link:hover {
+    color: vars.$color-accent;
+    cursor: pointer;
+}
+
+.social-media {
+    justify-content: space-evenly;
+    i {
+        font-size: 25px;
+        padding: 8px;
+    }
+}
+
+.report-stray-container {
+    display: flex;
+    height: 100%;
+    width: 400px;
+}
+
+.report-stray {
+    background-color: vars.$color-primary-dark;
+    color: white;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.report-stray:hover {
+    background-color: vars.$color-accent;
+    color: vars.$color-primary-dark;
+    cursor: pointer;
+}
+
+.fa-exclamation-circle {
+    padding-right: 8px;
+    font-size: 20px;
+    color: vars.$color-danger;
+}
+
+.padded {
+    padding-right: 8px;
+}
+
+.menu {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+
+    font-family: vars.$font-header;
+}
+
+.menu-items {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.menu-item:hover {
+    color: vars.$color-danger;
+}
+
+.menu-item-active {
+    color: vars.$color-danger;
+}

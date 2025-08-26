@@ -1,1 +1,28 @@
-/* You can add global styles to this file, and also import other style files */
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.no-style {
+  all: unset;
+  display: inline;
+  cursor: pointer;
+  text-decoration: none;
+  color: inherit;
+}
+
+.full {
+  height: 100%;
+  width: 100%;
+}
+
+.pet-point-container {
+    width: 100%;
+
+    iframe {
+        height: 100%;
+        width: 100%;
+        min-height: 700px;
+    }
+}

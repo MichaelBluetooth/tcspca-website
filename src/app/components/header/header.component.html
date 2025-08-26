@@ -1,0 +1,64 @@
+<div class="header">
+    <div class="header-items">
+        <div class="header-item">
+            <a class="no-style header-link full" href="#">
+                <i class="fa fa-heart padded"></i>
+                DONATE
+            </a>
+        </div>
+        <div class="header-item">
+            <a class="no-style header-link full" href="#">
+                <i class="fa fa-clock-o padded"></i>
+                HOURS
+            </a>
+        </div>
+        <div class="header-item">
+            <a class="no-style header-link full" href="#">
+                <i class="fa fa-phone padded"></i>
+                CONTACT
+            </a>
+        </div>
+        <div class="header-item social-media">
+            <a class="no-style social-media-link" href="https://www.facebook.com/spcaoftompkinscounty#" target="_blank">
+                <i class="fa fa-facebook-official" aria-hidden="true"></i>                
+            </a>
+            <a class="no-style social-media-link" href="https://x.com/SPCAofTC" target="_blank">
+                <i class="fa fa-twitter" aria-hidden="true"></i>
+            </a>
+            <a class="no-style social-media-link" href="https://www.instagram.com/spcaoftompkinscounty/#" target="_blank">
+                <i class="fa fa-instagram" aria-hidden="true"></i>
+            </a>
+        </div>
+    </div>
+
+    <div class="report-stray-container">
+        <div class="report-stray">
+            <i class="fa fa-exclamation-circle"></i>
+            REPORT A STRAY ANIMAL
+        </div>
+    </div>
+</div>
+<div class="menu">
+    <img src="home/logo-spca.png" height="100">
+
+    <div class="menu-items">
+        <a class="no-style menu-item" #adopt (click)="showNav('adopt', adopt)">
+            ADOPT A PET
+            <i class="fa fa-chevron-down" aria-hidden="true"></i>
+        </a>
+        <a class="no-style menu-item" #supportUs (click)="showNav('support', supportUs)">
+            SUPPORT US
+            <i class="fa fa-chevron-down" aria-hidden="true"></i>
+        </a>
+        <a class="no-style menu-item" #services (click)="showNav('services', services)">
+            SPCA SERVICES
+            <i class="fa fa-chevron-down" aria-hidden="true"></i>
+        </a>
+        <a class="no-style menu-item" #involved (click)="showNav('get-involved', involved)">
+            GET INVOLVED
+            <i class="fa fa-chevron-down" aria-hidden="true"></i>
+        </a>
+    </div>
+</div>
+
+<spca-nav-panel *ngIf="selectedMenu" [selectedMenu]="selectedMenu" (closed)="hideNav()"></spca-nav-panel>

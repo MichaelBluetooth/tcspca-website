@@ -1,0 +1,126 @@
+@use '../../../variables.scss' as vars;
+
+:host {
+    font-family: vars.$font-header;
+}
+
+.donate-container {
+    background-color: vars.$color-accent;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 45px;
+    letter-spacing: 0.075em;
+
+    span {
+        font-size: 35px;
+        color: white;
+    }
+}
+
+.donate-link {
+    background: white;
+    padding: 10px;
+    color: vars.$color-accent;
+    border-radius: 9999px;
+    font-size: 20px;
+    border: 2px solid white;
+}
+
+.donate-link:hover {
+    background: vars.$color-primary;
+    color: white;
+    border: 2px solid white;
+}
+
+.links-container {
+    background-color: vars.$color-primary-dark-alt;
+    background-image: url('/common/bg-noise-1.png');
+    padding-left: 185px;
+    padding-right: 185px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: flex;    
+}
+
+.social-media {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.social-media-header {
+    font-size: 35px;
+    color: vars.$color-accent;
+}
+
+.social-media-links {
+    display: flex;
+    gap: 45px;
+}
+
+.social-media-link {
+    font-size: 60px;
+    color: vars.$color-accent;
+}
+
+.social-media-link:hover {
+    color: white;
+}
+
+.newsletter-container {
+    padding-top: 20px;
+}
+
+.newsletter-link {
+    background: vars.$color-primary;
+    padding: 15px;
+    color: white;
+    border-radius: 9999px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.newsletter-link:hover {
+    filter: brightness(1.15);
+    /* 15% brighter */
+}
+
+.links {
+    color: vars.$color-text-gray;
+    display: flex;
+    flex-direction: row;
+    gap: 35px;
+    flex-grow: 1;
+    justify-content: center;
+}
+
+.link-header {
+    font-size: 23px;
+    font-weight: bold;
+    padding-bottom: 20px;
+}
+
+.link {
+    font-size: 18px;
+    display: block;
+    padding-bottom: 10px;
+}
+
+.link:hover {
+    color: white
+}
+
+.copyright-container {
+    background-color: vars.$color-primary-dark-alt;
+    background-image: url('/common/bg-noise-2.png');
+    display: flex;
+    flex-direction: column;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    align-items: center;
+    justify-content: center;
+    color: vars.$color-text-gray;
+}

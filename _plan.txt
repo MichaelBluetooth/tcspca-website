@@ -1,0 +1,8 @@
+1. Build header
+    - Mobile mode shows "Hours/Contact"
+    - Mobile mode shows full page hours/contact info when clicked
+2. Build menu bar
+    - Mobile mode shows full-page menu items
+3. Build footer
+4. 
+    

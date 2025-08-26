@@ -1,0 +1,39 @@
+Home
+    (via "adopt a pet")
+        gifts
+        tiles
+        planned-giving
+        needed-items
+        fundraisers
+        businesses-that-care
+        other-help
+
+    (via "support us")
+        adopting-pets
+        dogs
+        cats
+        other-animals
+        all-animals
+        tcac
+    
+    (via "spca services")
+        lost-and-found
+        tcac
+        surrender-pet
+        spay-neuter
+        education
+        classes
+        rabies-clinics
+        vet-care
+        partners
+    
+    (via "get involved")
+        about
+        staff
+        board
+        jobs
+        stats
+        volunteer
+        foster-family
+        community-service
+
