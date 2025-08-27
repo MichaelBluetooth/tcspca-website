@@ -9,8 +9,8 @@
 	"forwardPorts": [
 		4200
 	],
-	"postCreateCommand": "bash ./tcspca-website/.devcontainer/postCreateCommand.sh",
-	"postStartCommand": "bash ./tcspca-website/.devcontainer/postStartCommand.sh",
+	"postCreateCommand": "bash /workspaces/tcspca-website/.devcontainer/postCreateCommand.sh",
+	"postStartCommand": "bash /workspaces/tcspca-website/.devcontainer/postStartCommand.sh",
 	"customizations": {
 		"vscode": {
 			"extensions": [
