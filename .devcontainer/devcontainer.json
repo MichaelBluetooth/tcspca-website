@@ -1,0 +1,43 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the
+// README at: https://github.com/devcontainers/templates/tree/main/src/typescript-node
+{
+	"name": "Node.js & TypeScript",
+	"dockerComposeFile": "docker-compose.yaml",
+	"service": "app",
+	"workspaceFolder": "/workspaces",
+	"features": {
+		"ghcr.io/devcontainers-extra/features/angular-cli:2": {},
+		"ghcr.io/devcontainers/features/github-cli": {}
+	},
+	// Features to add to the dev container. More info: https://containers.dev/features.
+	// "features": {},
+	// Use 'forwardPorts' to make a list of ports inside the container available locally.
+	"forwardPorts": [
+		4200
+	],
+	"portsAttributes": {
+		"4200": {
+			"label": "Client"
+		}
+	},
+	"postCreateCommand": "bash ./recipe-app/.devcontainer/postCreateCommand.sh",
+	"postStartCommand": "bash ./recipe-app/.devcontainer/postStartCommand.sh",
+	// Configure tool-specific properties.
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"Angular.ng-template",
+				"esbenp.prettier-vscode",
+				"johnpapa.Angular2",
+				"ms-vscode.vscode-typescript-next"
+			]
+		},
+		"codespaces": {
+			"repositories": {
+				"MichaelBluetooth/tcspca-website": {
+					"permissions": "write-all"
+				}
+			}
+		}
+	}
+}
