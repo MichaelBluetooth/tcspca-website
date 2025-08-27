@@ -1,17 +1,12 @@
-import { Component, inject } from '@angular/core';
-import { ActivatedRoute, RouterOutlet } from '@angular/router';
+import { CommonModule } from '@angular/common';
+import { Component, inject, Input } from '@angular/core';
 
 @Component({
-    selector: 'spca-page',
-    imports: [RouterOutlet],
-    templateUrl: './page.component.html',
-    styleUrl: './page.component.scss'
+  selector: 'spca-page',
+  imports: [CommonModule],
+  templateUrl: './page.component.html',
+  styleUrls: ['./page.component.scss']
 })
 export class PageComponent {
-  title: string = '';
-  route = inject(ActivatedRoute);
-
-  ngOnInit(){
-    this.title = this.route.snapshot.children[0].data['title'];
-  }
+  @Input() title: string = '';
 }

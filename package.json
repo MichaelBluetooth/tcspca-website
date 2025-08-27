@@ -7,7 +7,8 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "serve:ssr:spca-website": "node dist/spca-website/server/server.mjs"
+    "serve:ssr:spca-website": "node dist/spca-website/server/server.mjs",
+    "deploy": "ng deploy --base-href=/tcspca-website/"
   },
   "private": true,
   "dependencies": {

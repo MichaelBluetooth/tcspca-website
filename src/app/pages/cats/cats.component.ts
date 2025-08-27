@@ -1,8 +1,9 @@
 import { Component } from '@angular/core';
+import { PageComponent } from '../../components/page/page.component';
 
 @Component({
     selector: 'spca-cats',
-    imports: [],
+    imports: [PageComponent],
     templateUrl: './cats.component.html',
     styleUrl: './cats.component.scss'
 })

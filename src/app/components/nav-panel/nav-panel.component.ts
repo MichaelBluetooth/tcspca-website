@@ -1,10 +1,11 @@
 import { Component, ElementRef, EventEmitter, HostListener, inject, Input, Output } from '@angular/core';
 import { MENU_ITEM_TYPES } from '../header/header.component';
 import { CommonModule } from '@angular/common';
+import { RouterLink } from '@angular/router';
 
 @Component({
     selector: 'spca-nav-panel',
-    imports: [CommonModule],
+    imports: [CommonModule, RouterLink],
     templateUrl: './nav-panel.component.html',
     styleUrl: './nav-panel.component.scss'
 })

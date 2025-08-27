@@ -7,7 +7,6 @@ import { DogsComponent } from './pages/dogs/dogs.component';
 import { CatsComponent } from './pages/cats/cats.component';
 import { AllAnimalsComponent } from './pages/all-animals/all-animals.component';
 import { AdoptingPetsComponent } from './pages/adopting-pets/adopting-pets.component';
-import { PageComponent } from './components/page/page.component';
 import { TilesComponent } from './pages/tiles/tiles.component';
 import { PlannedGivingComponent } from './pages/planned-giving/planned-giving.component';
 import { FundraisersComponent } from './pages/fundraisers/fundraisers.component';
@@ -35,219 +34,123 @@ export const routes: Routes = [
         component: HomeComponent
     },
     {
-        path: '',
-        component: PageComponent,
-        children: [
-            {
-                path: 'adopting-pets',
-                component: AdoptingPetsComponent,
-                data: {
-                    title: 'Adopting Your New Pet'
-                }
-            },
-            {
-                path: 'other-animals',
-                component: AllAnimalsComponent,
-                data: {
-                    title: 'Other Animals for Adoption'
-                }
-            },
-            {
-                path: 'cats',
-                component: CatsComponent,
-                data: {
-                    title: 'Cats for Adoption'
-                }
-            },
-            {
-                path: 'dogs',
-                component: DogsComponent,
-                data: {
-                    title: 'Dogs for Adoption'
-                }
-            },
-            {
-                path: 'gifts',
-                component: GiftsComponent,
-                data: {
-                    title: 'Making a Gift'
-                }
-            },
-            {
-                path: 'all-animals',
-                component: OtherAnimalsComponent,
-                data: {
-                    title: 'All Animals for Adoption'
-                }
-            },
-            {
-                path: 'tcac',
-                component: TcacComponent,
-                data: {
-                    title: 'Tompkins County Animal Control'
-                }
-            },
-            {
-                path: 'gifts',
-                component: GiftsComponent,
-                data: {
-                    title: 'Making a Gift'
-                }
-            },
-            {
-                path: 'tiles',
-                component: TilesComponent,
-                data: {
-                    title: 'Memorial and Tribute Tiles'
-                }
-            },
-            {
-                path: 'planned-giving',
-                component: PlannedGivingComponent,
-                data: {
-                    title: 'Planned Giving'
-                }
-            },
-            {
-                path: 'needed-items',
-                component: TilesComponent,
-                data: {
-                    title: 'Urgently Needed Items'
-                }
-            },
-            {
-                path: 'fundraisers',
-                component: FundraisersComponent,
-                data: {
-                    title: 'Organize a Fundraiser'
-                }
-            },
-            {
-                path: 'other-help',
-                component: OtherHelpComponent,
-                data: {
-                    title: 'Other Ways To Help'
-                }
-            },
-            {
-                path: 'businesses-that-care',
-                component: BusinessesThatCareComponent,
-                data: {
-                    title: 'Businesses That Care'
-                }
-            },
-            {
-                path: 'lost-and-found',
-                component: LostAndFoundComponent,
-                data: {
-                    title: 'Lost or Found Animals'
-                }
-            },
-            {
-                path: 'surrender-pet',
-                component: SurrenderPetComponent,
-                data: {
-                    title: 'Surrendering a Pet'
-                }
-            },
-            {
-                path: 'spay-neuter',
-                component: SurrenderPetComponent,
-                data: {
-                    title: 'Spay and Neuter Program'
-                }
-            },
-            {
-                path: 'education',
-                component: EducationComponent,
-                data: {
-                    title: 'Humane and Youth Education'
-                }
-            },
-            {
-                path: 'classes',
-                component: ClassesComponent,
-                data: {
-                    title: 'Training and Socialization Classes'
-                }
-            },
-            {
-                path: 'rabies-clinics',
-                component: RabiesClinicsComponent,
-                data: {
-                    title: 'Free Rabies Clinics'
-                }
-            },
-            {
-                path: 'vet-care',
-                component: VetCareComponent,
-                data: {
-                    title: 'Veterinary Care'
-                }
-            },
-            {
-                path: 'partners',
-                component: PartnersComponent,
-                data: {
-                    title: 'Our Partners'
-                }
-            },
-            {
-                path: 'about',
-                component: AboutComponent,
-                data: {
-                    title: 'About Us'
-                }
-            },
-            {
-                path: 'staff',
-                component: StaffComponent,
-                data: {
-                    title: 'Our Staff'
-                }
-            },
-            {
-                path: 'board',
-                component: BoardComponent,
-                data: {
-                    title: 'Board of Directors'
-                }
-            },
-            {
-                path: 'jobs',
-                component: JobsComponent,
-                data: {
-                    title: 'Job Openings'
-                }
-            },
-            {
-                path: 'stats',
-                component: StatsComponent,
-                data: {
-                    title: 'Statistics'
-                }
-            },
-            {
-                path: 'volunteer',
-                component: VolunteerComponent,
-                data: {
-                    title: 'Volunteer'
-                }
-            },
-            {
-                path: 'foster-family',
-                component: FosterFamilyComponent,
-                data: {
-                    title: 'Foster an Animal'
-                }
-            },
-            {
-                path: 'community-service',
-                component: CommunityServiceComponent,
-                data: {
-                    title: 'Community Service'
-                }
-            }
-        ]
+        path: 'adopting-pets',
+        component: AdoptingPetsComponent
+    },
+    {
+        path: 'other-animals',
+        component: AllAnimalsComponent
+    },
+    {
+        path: 'cats',
+        component: CatsComponent
+    },
+    {
+        path: 'dogs',
+        component: DogsComponent
+    },
+    {
+        path: 'gifts',
+        component: GiftsComponent
+    },
+    {
+        path: 'all-animals',
+        component: OtherAnimalsComponent
+    },
+    {
+        path: 'tcac',
+        component: TcacComponent
+    },
+    {
+        path: 'gifts',
+        component: GiftsComponent
+    },
+    {
+        path: 'tiles',
+        component: TilesComponent
+    },
+    {
+        path: 'planned-giving',
+        component: PlannedGivingComponent
+    },
+    {
+        path: 'needed-items',
+        component: TilesComponent
+    },
+    {
+        path: 'fundraisers',
+        component: FundraisersComponent
+    },
+    {
+        path: 'other-help',
+        component: OtherHelpComponent
+    },
+    {
+        path: 'businesses-that-care',
+        component: BusinessesThatCareComponent
+    },
+    {
+        path: 'lost-and-found',
+        component: LostAndFoundComponent
+    },
+    {
+        path: 'surrender-pet',
+        component: SurrenderPetComponent
+    },
+    {
+        path: 'spay-neuter',
+        component: SurrenderPetComponent
+    },
+    {
+        path: 'education',
+        component: EducationComponent
+    },
+    {
+        path: 'classes',
+        component: ClassesComponent
+    },
+    {
+        path: 'rabies-clinics',
+        component: RabiesClinicsComponent
+    },
+    {
+        path: 'vet-care',
+        component: VetCareComponent
+    },
+    {
+        path: 'partners',
+        component: PartnersComponent
+    },
+    {
+        path: 'about',
+        component: AboutComponent
+    },
+    {
+        path: 'staff',
+        component: StaffComponent
+    },
+    {
+        path: 'board',
+        component: BoardComponent
+    },
+    {
+        path: 'jobs',
+        component: JobsComponent
+    },
+    {
+        path: 'stats',
+        component: StatsComponent
+    },
+    {
+        path: 'volunteer',
+        component: VolunteerComponent
+    },
+    {
+        path: 'foster-family',
+        component: FosterFamilyComponent
+    },
+    {
+        path: 'community-service',
+        component: CommunityServiceComponent
     }
 ];
