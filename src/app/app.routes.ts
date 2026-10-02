@@ -27,6 +27,7 @@ import { JobsComponent } from './pages/jobs/jobs.component';
 import { BoardComponent } from './pages/board/board.component';
 import { StaffComponent } from './pages/staff/staff.component';
 import { AboutComponent } from './pages/about/about.component';
+import { NeededItemsComponent } from './pages/needed-items/needed-items.component';
 
 export const routes: Routes = [
     {
@@ -75,7 +76,7 @@ export const routes: Routes = [
     },
     {
         path: 'needed-items',
-        component: TilesComponent
+        component: NeededItemsComponent
     },
     {
         path: 'fundraisers',
