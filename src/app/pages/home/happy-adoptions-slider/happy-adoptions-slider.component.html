@@ -1,0 +1,35 @@
+<div class="wrapper">
+    <div class="title-container">
+        <div>
+            Happy Adoptions :)
+        </div>
+
+        <div class="nav-buttons">
+            <div class="nav-button previous" (click)="previousSlide()">
+                <i class="fa fa-arrow-left"></i>
+            </div>
+            <div class="nav-button next" (click)="nextSlide()">
+                <i class="fa fa-arrow-right"></i>
+            </div>
+        </div>
+    </div>
+    <div class="slider-container">
+        <swiper-container #swiper style="height: 100%" slides-per-view="3" space-between="0" loop="true" [breakpoints]="sliderBreakPoints">
+            <swiper-slide>
+                <img src="assets/home/insta1.jpg">
+            </swiper-slide>
+            <swiper-slide>
+                <img src="assets/home/insta2.jpg">
+            </swiper-slide>
+            <swiper-slide>
+                <img src="assets/home/insta3.jpg">
+            </swiper-slide>
+            <swiper-slide>
+                <img src="assets/home/insta4.jpg">
+            </swiper-slide>
+            <swiper-slide>
+                <img src="assets/home/insta5.jpg">
+            </swiper-slide>
+        </swiper-container>
+    </div>
+</div>

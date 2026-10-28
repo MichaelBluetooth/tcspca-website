@@ -1,0 +1,27 @@
+<div class="pet-finder">
+    <div class="pet-finder-section">
+        <div class="pet-finder-header">
+            <div class="pet-finder-header-text">
+                <span class="primary-text">SPCA</span> <span class="emphasized-text">Pet Finder</span>
+            </div>
+        </div>
+    </div>
+    <a class="pet-finder-section pet-finder-section-link" [routerLink]="['/dogs']">
+        <img src="assets/home/pet-dog.png">
+        Dogs
+    </a>
+    <a class="pet-finder-section pet-finder-section-link" [routerLink]="['/cats']">
+        <img src="assets/home/pet-cat.png">
+        Cats
+    </a>
+    <a class="pet-finder-section pet-finder-section-link" [routerLink]="['/other-animals']">
+        <img src="assets/home/pet-other.png">
+        Other
+    </a>
+    <a class="pet-finder-section pet-finder-section-link" [routerLink]="['/all-animals']">
+        All Pets
+    </a>
+    <div class="pet-finder-section">
+        <!-- empty for spacing -->
+    </div>
+</div>

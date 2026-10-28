@@ -1,52 +1,41 @@
-<div class="slider-wrapper">
-    <div class="image">
-        <img src="https://www.spcaonline.com/assets/img/mfa2026.jpeg">
+
+<spca-home-banner></spca-home-banner>
+<spca-pet-finder-banner></spca-pet-finder-banner>
+<div class="home-content">
+    <div class="home-content-title-wrapper">
+        <h1 class="home-content-title">
+            <span>
+                <strong>SPCA</strong> of Tompkins County is a <strong>no-kill shelter</strong>
+            </span>
+            and is dedicated to finding all pets a home.
+        </h1>
+        <div class="home-content-line"></div>
     </div>
-    <div class="details-wrapper">
-        <div class="banner-item-header">
-            <div class="line"></div>
-            Support
-        </div>
-        <div class="details">
-            <div class="banner-item-title">
-                March for the Animals 10/11/26!
-            </div>
-            <p class="banner-item-summary">
-                Join us March for the Animals, Sunday October 11, 2026 at 11:00 am at Stewart Park! Register Today and support our favorite furry friends!
+    <div class="home-content-details">
+        <div class="home-content-text">
+            <h3>Since 1902 we’ve been helping animals find love!</h3>
+            <p>
+                The mission of the SPCA of Tompkins County, located in Ithaca, NY, is to protect companion animals. We are a no-kill shelter dedicated to
+                preventing animal cruelty and overpopulation. We promote responsible pet stewardship by providing education, counseling and training to nurture
+                and enhance the human-animal bond.
+            </p>
+            <p>
+                Each year we take in and find happy new homes here in our community for close to 2000 animals. The SPCA staff, along with over 250 annual
+                volunteers, rehabilitate, train, and care for these animals keeping them safe, happy, and socialized until they find their new forever homes.
             </p>
 
-            <div class="button-wrapper">
-                <div class="pill-button" href="https://www.givegab.com/campaigns/2026-spca-march-for-the-animals-special-edition" _target="blank">
-                    Register Here
-                </div>
-            </div>
+            <div class="home-content-link">
+                <a [routerLink]="['/about']">Learn More About Us <span class="fa fa-chevron-right"></span></a>
+            </div>            
         </div>
+        <div class="home-content-image">
+            <img src="assets/home/img-intro-dog.jpg" />
+        </div>        
     </div>
 </div>
-<div class="pet-finder">
-    <div class="pet-finder-section">
-        <div class="pet-finder-header">
-            <div class="pet-finder-header-text">
-                <span class="primary-text">SPCA</span> <span class="emphasized-text">Pet Finder</span>
-            </div>
-        </div>
-    </div>
-    <div class="pet-finder-section">
-        <img src="assets/home/pet-dog.png">
-        Dogs
-    </div>
-    <div class="pet-finder-section">
-        <img src="assets/home/pet-cat.png">
-        Cats
-    </div>
-    <div class="pet-finder-section">
-        <img src="assets/home/pet-other.png">
-        Other
-    </div>
-    <div class="pet-finder-section">
-        All Pets
-    </div>
-    <div class="pet-finder-section">
-        <!-- empty for spacing -->
-    </div>
+<div class="nav-boxes-wrapper">
+    <spca-nav-boxes></spca-nav-boxes>
+</div>
+<div class="adoptions-slider-wrapper">
+    <spca-happy-adoptions-slider></spca-happy-adoptions-slider>
 </div>
