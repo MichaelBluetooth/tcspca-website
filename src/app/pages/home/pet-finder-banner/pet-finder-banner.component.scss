@@ -8,8 +8,12 @@
     background-color: vars.$color-primary-dark;
 }
 
+.primary-text {
+    color: vars.$color-primary;
+}
+
 .pet-finder-header {
-    padding-left: 200px;
+    padding-left: 20px;
     width: 100%;
 }
 
@@ -17,12 +21,11 @@
     display: flex;
     gap: 8px;
     flex-direction: row;
-    font-size: 45px;
     border-bottom: 2px solid vars.$color-primary-alt;
 }
 
 .pet-finder-section:first-child {
-    width: 45%;
+    width: 35%;
 }
 
 .pet-finder-section {
@@ -33,8 +36,8 @@
     height: 100%;
     color: white;
     width: 100%;
-    font-size: 35px;
-    width: 15%;
+    font-size: 20px;
+    width: 25%;
     text-decoration: none;
 }
 
@@ -46,11 +49,48 @@
     border-right: 1px solid vars.$color-border-dark;
 }
 
-.pet-finder-section {
-    // padding-left: 40px;
-    // padding-right: 40px;
+.pet-finder-section:last-child {
+    display: none;
 }
 
-.pet-finder-section:first-child {
-    // margin-left: 10%;
+@media (min-width: vars.$size-xl) {
+    .pet-finder-section:last-child {
+        display: none;
+        width: 15%;
+    }
+
+    .pet-finder-section:first-child {
+        width: 15%;
+    }
+
+    .pet-finder-header {
+        padding-left: 20px;
+        font-size: 25px;
+    }
+
+    .pet-finder-section {
+        font-size: 20px;
+        width: 15%;
+    }
+}
+
+@media (min-width: vars.$size-xxl) {
+    .pet-finder-section:last-child {
+        display: block;
+        width: 15%;
+    }
+
+    .pet-finder-section:first-child {
+        width: 35%;
+    }
+
+    .pet-finder-header {
+        padding-left: 200px;
+        font-size: 45px;
+    }
+
+    .pet-finder-section {
+        font-size: 35px;
+        width: 15%;
+    }
 }

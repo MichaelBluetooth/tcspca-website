@@ -12,8 +12,9 @@ export class HappyAdoptionsSliderComponent {
   private readonly swiper = viewChild<ElementRef<SwiperContainer>>('swiper');
 
   sliderBreakPoints = {
-    // 640: { slidesPerView: 2 },
-    // 1024: { slidesPerView: 3 }
+    640: { slidesPerView: 2 },
+    1024: { slidesPerView: 2 },
+    1200: { slidesPerView: 3 },
   }
 
   nextSlide(): void {

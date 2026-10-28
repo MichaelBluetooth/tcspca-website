@@ -21,13 +21,12 @@ $border-radius: 10px;
 }
 
 .nav-box:hover {
-    cursor: pointer;    
+    cursor: pointer;
 }
 
 .nav-box-title {
     position: absolute;
     bottom: 0;
-    ;
     background-color: vars.$color-primary;
     height: 85px;
     width: 100%;
@@ -45,17 +44,31 @@ $border-radius: 10px;
         padding: 0 10px 0 10px;
 
         .group {
-            font-size: 14px;
+            font-size: 12px;
         }
 
         .title {
-            font-size: 35px;
+            font-size: 25px;
         }
     }
 
     .arrow {
         font-size: 30px;
         padding-right: 10px
+    }
+}
+
+@media (min-width: vars.$size-xxl) {
+    .nav-box-title {
+        .content {
+            .group {
+                font-size: 14px;
+            }
+
+            .title {
+                font-size: 35px;
+            }
+        }
     }
 }
 

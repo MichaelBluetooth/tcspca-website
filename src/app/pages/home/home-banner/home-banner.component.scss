@@ -65,7 +65,7 @@ $border-width: 55px;
     font-weight: 700;
     font-family: "museo-sans", sans-serif;
 
-    
+
     .line {
         width: 100px;
         border: 1px solid white;
@@ -104,12 +104,31 @@ $border-width: 55px;
 .title {
     font-size: 3.6em;
     padding-bottom: 30px;
-    ;
 }
 
 .detail {
     font-size: 1.2em;
     font-family: "adobe-garamond-pro", serif;
+}
+
+@media (min-width: vars.$size-lg) {
+    .title {
+        font-size: 2.4em;
+    }
+
+    .detail {
+        font-size: 1.1em;
+    }
+}
+
+@media (min-width: vars.$size-xl) {
+    .title {
+        font-size: 3.6em;
+    }
+
+    .detail {
+        font-size: 1.2em;
+    }
 }
 
 .buttons {
@@ -125,7 +144,7 @@ $border-width: 55px;
     padding: 20px 32px;
     // width: 165px;
     display: inline-block;
-    text-align: center;    
+    text-align: center;
     font-size: 0.875rem;
     font-weight: 700;
     letter-spacing: 0.05em;
