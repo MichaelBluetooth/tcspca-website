@@ -14,6 +14,7 @@ import { OtherHelpComponent } from './pages/other-help/other-help.component';
 import { BusinessesThatCareComponent } from './pages/businesses-that-care/businesses-that-care.component';
 import { LostAndFoundComponent } from './pages/lost-and-found/lost-and-found.component';
 import { SurrenderPetComponent } from './pages/surrender-pet/surrender-pet.component';
+import { SpayNeuterComponent } from './pages/spay-neuter/spay-neuter.component';
 import { EducationComponent } from './pages/education/education.component';
 import { ClassesComponent } from './pages/classes/classes.component';
 import { RabiesClinicsComponent } from './pages/rabies-clinics/rabies-clinics.component';
@@ -100,7 +101,7 @@ export const routes: Routes = [
     },
     {
         path: 'spay-neuter',
-        component: SurrenderPetComponent
+        component: SpayNeuterComponent
     },
     {
         path: 'education',
