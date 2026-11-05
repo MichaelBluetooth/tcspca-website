@@ -20,7 +20,6 @@ import { ClassesComponent } from './pages/classes/classes.component';
 import { RabiesClinicsComponent } from './pages/rabies-clinics/rabies-clinics.component';
 import { VetCareComponent } from './pages/vet-care/vet-care.component';
 import { PartnersComponent } from './pages/partners/partners.component';
-import { CommunityServiceComponent } from './pages/community-service/community-service.component';
 import { FosterFamilyComponent } from './pages/foster-family/foster-family.component';
 import { VolunteerComponent } from './pages/volunteer/volunteer.component';
 import { StatsComponent } from './pages/stats/stats.component';
@@ -150,9 +149,5 @@ export const routes: Routes = [
     {
         path: 'foster-family',
         component: FosterFamilyComponent
-    },
-    {
-        path: 'community-service',
-        component: CommunityServiceComponent
     }
 ];
