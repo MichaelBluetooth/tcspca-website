@@ -40,7 +40,7 @@ export const routes: Routes = [
     },
     {
         path: 'other-animals',
-        component: AllAnimalsComponent
+        component: OtherAnimalsComponent
     },
     {
         path: 'cats',
@@ -56,7 +56,7 @@ export const routes: Routes = [
     },
     {
         path: 'all-animals',
-        component: OtherAnimalsComponent
+        component: AllAnimalsComponent
     },
     {
         path: 'tcac',
