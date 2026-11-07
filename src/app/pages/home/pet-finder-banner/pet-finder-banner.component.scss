@@ -1,96 +1,124 @@
 @use '../../../../variables.scss' as vars;
 
-.pet-finder {
+.pet-finder-sm {
     display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    height: 120px;
-    background-color: vars.$color-primary-dark;
-}
-
-.primary-text {
-    color: vars.$color-primary;
-}
-
-.pet-finder-header {
-    padding-left: 20px;
-    width: 100%;
-}
-
-.pet-finder-header-text {
-    display: flex;
-    gap: 8px;
     flex-direction: row;
-    border-bottom: 2px solid vars.$color-primary-alt;
-}
-
-.pet-finder-section:first-child {
-    width: 35%;
-}
-
-.pet-finder-section {
-    display: flex;
     align-items: center;
-    justify-content: center;
-    gap: 16px;
-    height: 100%;
-    color: white;
-    width: 100%;
-    font-size: 20px;
-    width: 25%;
-    text-decoration: none;
+    justify-content: space-between;
+    height: 60px;
+    background-color: vars.$color-primary-dark;
+    color: vars.$color-accent;
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 0.05em; 
+    padding: 0 10px 0 10px;
+
+    .pet-finder-img {
+        width: 45px;
+    }
 }
 
-.pet-finder-section-link:hover {
-    color: vars.$color-primary;
-}
-
-.pet-finder>*:not(:last-child) {
-    border-right: 1px solid vars.$color-border-dark;
-}
-
-.pet-finder-section:last-child {
+.pet-finder {
     display: none;
 }
 
-@media (min-width: vars.$size-xl) {
-    .pet-finder-section:last-child {
+@media (min-width: vars.$size-lg) {
+    .pet-finder-sm {
         display: none;
-        width: 15%;
     }
 
-    .pet-finder-section:first-child {
-        width: 15%;
+    .pet-finder {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        height: 120px;
+        background-color: vars.$color-primary-dark;
+    }
+
+    .primary-text {
+        color: vars.$color-primary;
     }
 
     .pet-finder-header {
         padding-left: 20px;
-        font-size: 25px;
+        width: 100%;
     }
 
-    .pet-finder-section {
-        font-size: 20px;
-        width: 15%;
-    }
-}
-
-@media (min-width: vars.$size-xxl) {
-    .pet-finder-section:last-child {
-        display: block;
-        width: 15%;
+    .pet-finder-header-text {
+        display: flex;
+        gap: 8px;
+        flex-direction: row;
+        border-bottom: 2px solid vars.$color-primary-alt;
     }
 
     .pet-finder-section:first-child {
         width: 35%;
     }
 
-    .pet-finder-header {
-        padding-left: 200px;
-        font-size: 45px;
+    .pet-finder-section {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 16px;
+        height: 100%;
+        color: white;
+        width: 100%;
+        font-size: 20px;
+        width: 25%;
+        text-decoration: none;
     }
 
-    .pet-finder-section {
-        font-size: 35px;
-        width: 15%;
+    .pet-finder-section-link:hover {
+        color: vars.$color-primary;
+    }
+
+    .pet-finder>*:not(:last-child) {
+        border-right: 1px solid vars.$color-border-dark;
+    }
+
+    .pet-finder-section:last-child {
+        display: none;
+    }
+
+    @media (min-width: vars.$size-xl) {
+        .pet-finder-section:last-child {
+            display: none;
+            width: 15%;
+        }
+
+        .pet-finder-section:first-child {
+            width: 15%;
+        }
+
+        .pet-finder-header {
+            padding-left: 20px;
+            font-size: 25px;
+        }
+
+        .pet-finder-section {
+            font-size: 20px;
+            width: 15%;
+        }
+    }
+
+    @media (min-width: vars.$size-xxl) {
+        .pet-finder-section:last-child {
+            display: block;
+            width: 15%;
+        }
+
+        .pet-finder-section:first-child {
+            width: 35%;
+        }
+
+        .pet-finder-header {
+            padding-left: 200px;
+            font-size: 45px;
+        }
+
+        .pet-finder-section {
+            font-size: 35px;
+            width: 15%;
+        }
     }
 }

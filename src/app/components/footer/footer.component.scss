@@ -9,13 +9,16 @@
     padding-top: 50px;
     padding-bottom: 50px;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 45px;
+    text-align: center;
+    gap: 15px;
     letter-spacing: 0.075em;
+    padding: 20px 2% 20px 2%;
 
     span {
-        font-size: 35px;
+        font-size: 20px;
         color: white;
     }
 }
@@ -33,6 +36,18 @@
     background: vars.$color-primary;
     color: white;
     border: 2px solid white;
+}
+
+@media (min-width: vars.$size-lg) {
+    .donate-container {
+        height: 110px;
+        flex-direction: row;
+        gap: 45px;
+
+        span {
+            font-size: 35px;
+        }
+    }
 }
 
 .links-container {
