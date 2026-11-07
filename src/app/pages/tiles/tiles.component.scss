@@ -1,0 +1,44 @@
+.buttons {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    gap: 10px
+}
+
+.pill-button {
+    border-radius: 100vw;
+    padding: 20px 32px;
+    // width: 165px;
+    display: inline-block;
+    text-align: center;
+    font-size: 0.875rem;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    line-height: 1;
+    text-transform: uppercase;
+}
+
+.pill-button-primary {
+    color: white;
+    background-color: #3362D9;
+}
+
+
+.pill-button-inverse {
+    border: 1px solid #fff;
+    color: #fff;
+    background-color:#698FEA;;
+}
+
+.pill-button-primary:hover {
+    background-color:  #F3C54A;
+    cursor: pointer;
+}
+
+.pill-button-inverse:hover {
+    color:  #F3C54A;
+    cursor: pointer;
+    border: 1px solid  #F3C54A
+}
