@@ -1,66 +1,48 @@
 <div class="header">
-    <div class="header-items">
-        <div class="header-item">
-            <a class="no-style header-link full" routerLink="/gifts">
-                <i class="fa fa-heart padded"></i>
-                DONATE
-            </a>
+    <div class="header-item hours-contact">
+        <div class="header-items-list-sm" (click)="showMobileHoursPanel=true">
+            <i class="fa fa-clock-o" aria-hidden="true"></i>
+            HOURS/CONTACT
         </div>
-        <div class="header-item">
-            <a class="no-style header-link full" routerLink="#">
-                <i class="fa fa-clock-o padded"></i>
-                HOURS
-            </a>
-        </div>
-        <div class="header-item">
-            <a class="no-style header-link full" routerLink="#">
-                <i class="fa fa-phone padded"></i>
-                CONTACT
-            </a>
-        </div>
-        <div class="header-item social-media">
-            <a class="no-style social-media-link" routerLink="https://www.facebook.com/spcaoftompkinscounty#" target="_blank">
-                <i class="fa fa-facebook-official" aria-hidden="true"></i>                
-            </a>
-            <a class="no-style social-media-link" routerLink="https://x.com/SPCAofTC" target="_blank">
-                <i class="fa fa-twitter" aria-hidden="true"></i>
-            </a>
-            <a class="no-style social-media-link" routerLink="https://www.instagram.com/spcaoftompkinscounty/#" target="_blank">
-                <i class="fa fa-instagram" aria-hidden="true"></i>
-            </a>
+        <div class="header-items-list">
+            <div class="header-list-item">
+                <a class="no-style header-link full" routerLink="/gifts">
+                    <i class="fa fa-heart padded"></i>
+                    DONATE
+                </a>
+            </div>
+            <div class="header-list-item">
+                <a class="no-style header-link full" routerLink="#">
+                    <i class="fa fa-clock-o padded"></i>
+                    HOURS
+                </a>
+            </div>
+            <div class="header-list-item">
+                <a class="no-style header-link full" routerLink="#">
+                    <i class="fa fa-phone padded"></i>
+                    CONTACT
+                </a>
+            </div>
+            <div class="header-list-item social-media">
+                <a class="no-style social-media-link" routerLink="https://www.facebook.com/spcaoftompkinscounty#" target="_blank">
+                    <i class="fa fa-facebook-official" aria-hidden="true"></i>
+                </a>
+                <a class="no-style social-media-link" routerLink="https://x.com/SPCAofTC" target="_blank">
+                    <i class="fa fa-twitter" aria-hidden="true"></i>
+                </a>
+                <a class="no-style social-media-link" routerLink="https://www.instagram.com/spcaoftompkinscounty/#" target="_blank">
+                    <i class="fa fa-instagram" aria-hidden="true"></i>
+                </a>
+            </div>
         </div>
     </div>
-
-    <a class="no-style report-stray-container" routerLink="/tcac">
+    <a class="header-item no-style report-stray-container" routerLink="/tcac">
         <div class="report-stray">
             <i class="fa fa-exclamation-circle"></i>
-            REPORT A STRAY ANIMAL
+            REPORT A STRAY <span class="animal">ANIMAL</span>
         </div>
     </a>
 </div>
-<div class="menu">
-    <a routerLink="/">
-        <img class="logo-img" src="assets/home/logo-spca.png">
-    </a>
 
-    <div class="menu-items">
-        <a class="no-style menu-item" #adopt (click)="showNav('adopt', adopt)">
-            ADOPT A PET
-            <i class="fa fa-chevron-down" aria-hidden="true"></i>
-        </a>
-        <a class="no-style menu-item" #supportUs (click)="showNav('support', supportUs)">
-            SUPPORT US
-            <i class="fa fa-chevron-down" aria-hidden="true"></i>
-        </a>
-        <a class="no-style menu-item" #services (click)="showNav('services', services)">
-            SPCA SERVICES
-            <i class="fa fa-chevron-down" aria-hidden="true"></i>
-        </a>
-        <a class="no-style menu-item" #involved (click)="showNav('get-involved', involved)">
-            GET INVOLVED
-            <i class="fa fa-chevron-down" aria-hidden="true"></i>
-        </a>
-    </div>
-</div>
-
-<spca-nav-panel *ngIf="selectedMenu" [selectedMenu]="selectedMenu" (closed)="hideNav()"></spca-nav-panel>
+<spca-header-menu></spca-header-menu>
+<spca-mobile-hours-panel *ngIf="showMobileHoursPanel" (closed)="showMobileHoursPanel=false"></spca-mobile-hours-panel>

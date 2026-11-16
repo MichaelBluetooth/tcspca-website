@@ -1,0 +1,26 @@
+<div class="menu">
+    <a routerLink="/">
+        <img class="logo-img" src="assets/home/logo-spca.png">
+    </a>
+
+    <div class="menu-items">
+        <a class="no-style menu-item" #adopt (click)="showNav('adopt', adopt)">
+            ADOPT A PET
+            <i class="fa fa-chevron-down" aria-hidden="true"></i>
+        </a>
+        <a class="no-style menu-item" #supportUs (click)="showNav('support', supportUs)">
+            SUPPORT US
+            <i class="fa fa-chevron-down" aria-hidden="true"></i>
+        </a>
+        <a class="no-style menu-item" #services (click)="showNav('services', services)">
+            SPCA SERVICES
+            <i class="fa fa-chevron-down" aria-hidden="true"></i>
+        </a>
+        <a class="no-style menu-item" #involved (click)="showNav('get-involved', involved)">
+            GET INVOLVED
+            <i class="fa fa-chevron-down" aria-hidden="true"></i>
+        </a>
+    </div>
+</div>
+
+<spca-nav-panel *ngIf="selectedMenu" [selectedMenu]="selectedMenu" (closed)="hideNav()"></spca-nav-panel>

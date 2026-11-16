@@ -13,6 +13,10 @@ html, body {
   color: inherit;
 }
 
+.no-scroll {
+  overflow: hidden;
+}
+
 .full {
   height: 100%;
   width: 100%;
