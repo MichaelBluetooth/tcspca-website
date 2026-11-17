@@ -32,7 +32,7 @@ export class HeaderMenuComponent {
     });
   }
 
-  showNav(selectedMenu: MENU_ITEM_TYPES, item: HTMLAnchorElement) {
+  showNav(selectedMenu: MENU_ITEM_TYPES, item: HTMLElement) {
     const elements: any = this.document.getElementsByClassName('menu-item');
     for (let i = 0; i < elements.length; i++) {
       elements[i].classList.remove('menu-item-active');
