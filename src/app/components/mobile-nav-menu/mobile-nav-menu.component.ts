@@ -1,5 +1,6 @@
-import { Component, ElementRef, EventEmitter, Output, QueryList, ViewChildren } from '@angular/core';
-import { RouterModule } from '@angular/router';
+import { Component, ElementRef, EventEmitter, inject, Output, QueryList, ViewChildren } from '@angular/core';
+import { NavigationEnd, Router, RouterModule } from '@angular/router';
+import { filter } from 'rxjs';
 
 @Component({
   selector: 'spca-mobile-nav-menu',
@@ -14,7 +15,18 @@ export class MobileNavMenuComponent {
 
   @Output() closed = new EventEmitter();
 
+  router = inject(Router);
+
   visibleMenuIdx: number | null = null;
+
+  ngOnInit() {
+    //Whenever a new page is loaded, hide the nav panel
+    this.router.events.pipe(
+      filter(event => event instanceof NavigationEnd)
+    ).subscribe(() => {
+      this.closed.emit();
+    });
+  }
 
   ngAfterViewInit() {
     this.collapseAll();
