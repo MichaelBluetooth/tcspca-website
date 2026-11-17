@@ -1,0 +1,72 @@
+@use '../../../variables.scss' as vars;
+
+:host {
+    position: absolute;
+    top: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: vars.$color-primary;
+    z-index: 9000;
+    color: white;
+    text-transform: uppercase;
+    
+    overflow-y: auto;
+    overscroll-behavior: contain;
+}
+
+.bg-dark {
+    background-color: vars.$color-primary-alt;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    border-bottom: 1px solid vars.$color-border-dark;
+}
+
+.logo-img {
+    filter: invert(1);
+    height: 50px;
+}
+
+.fa-times {
+    font-size: 40px;
+}
+
+.collapsible-section {
+    border-bottom: 1px solid vars.$color-border-dark;
+}
+
+.collapsible-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 30px;
+    padding: 15px 20px;
+}
+
+.collapsible-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 10px 30px;
+}
+
+.item {
+    padding-bottom: 15px;
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 40px 30px;
+    color: white;
+    font-size: 50px;
+}
+
+.hidden {
+  display: none;
+}

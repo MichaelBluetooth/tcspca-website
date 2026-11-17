@@ -1,8 +1,13 @@
 <div class="menu">
     <a routerLink="/">
         <img class="logo-img" src="assets/home/logo-spca.png">
+        <img class="logo-img-sm" src="assets/home/logo-spca-sm.png">
     </a>
 
+    <div class="menu-button-container" (click)="showMobileMenu = true">
+        Menu
+        <i class="fa fa-bars" aria-hidden="true"></i>
+    </div>
     <div class="menu-items">
         <a class="no-style menu-item" #adopt (click)="showNav('adopt', adopt)">
             ADOPT A PET
@@ -24,3 +29,4 @@
 </div>
 
 <spca-nav-panel *ngIf="selectedMenu" [selectedMenu]="selectedMenu" (closed)="hideNav()"></spca-nav-panel>
+<spca-mobile-nav-menu *ngIf="showMobileMenu" (closed)="showMobileMenu = false"></spca-mobile-nav-menu>

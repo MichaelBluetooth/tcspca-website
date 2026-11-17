@@ -1,0 +1,97 @@
+<div class="header">
+    <img class="logo-img" src="assets/home/logo-spca-sm.png">
+    <div (click)="closed.emit()">
+        <i class="fa fa-times" aria-hidden="true"></i>
+    </div>
+</div>
+
+<div #collaspibleSection class="collapsible-section">
+    <div class="collapsible-header" (click)="showMenu(0)">
+        <div>
+            Adopt a Pet
+        </div>
+        <div>
+            <i #navMenuToggle class="fa fa-chevron-down" aria-hidden="true"></i>
+        </div>
+    </div>
+    <div #navMenuBody class="collapsible-body">
+        <a class="no-style item" routerLink="/adopting-pets">Adopting your new pet</a>
+        <a class="no-style item" routerLink="/dogs">Available dogs</a>
+        <a class="no-style item" routerLink="/cats">Available cats</a>
+        <a class="no-style item" routerLink="/other-animals">Other Companion Animals</a>
+        <a class="no-style item" routerLink="/all-animals">All Available Animals</a>
+        <a class="no-style item" routerLink="/tcac">Report a Stray Animal</a>
+    </div>
+</div>
+
+<div #collaspibleSection class="collapsible-section">
+    <div class="collapsible-header" (click)="showMenu(1)">
+        <div>
+            Support Us
+        </div>
+        <div>
+            <i #navMenuToggle class="fa fa-chevron-down" aria-hidden="true"></i>
+        </div>
+    </div>
+    <div #navMenuBody class="collapsible-body">
+        <a class="no-style item" routerLink="/gifts">Make a gift online</a>
+        <a class="no-style item" routerLink="/tiles">Memorial and tribute tiles</a>
+        <a class="no-style item" routerLink="/planned-giving">Planned Giving</a>
+        <a class="no-style item" routerLink="/needed-items">Urgently Needed Items</a>
+        <a class="no-style item" routerLink="/fundraisers">Organize a Fundraiser</a>
+        <a class="no-style item" routerLink="/businesses-that-care">Businesses That Care</a>
+        <a class="no-style item" routerLink="/other-help">Other Ways to Help</a>
+    </div>
+</div>
+
+<div #collaspibleSection class="collapsible-section">
+    <div class="collapsible-header" (click)="showMenu(2)">
+        <div>
+            SPCA Services
+        </div>
+        <div>
+            <i #navMenuToggle class="fa fa-chevron-down" aria-hidden="true"></i>
+        </div>
+    </div>
+    <div #navMenuBody class="collapsible-body">
+        <a class="no-style item" routerLink="/lost-and-found">Lost or Found Animals</a>
+        <a class="no-style item" routerLink="/tcac">TC Animal Control</a>
+        <a class="no-style item" routerLink="/tcac">Stray Dogs or Injured Animals</a>
+        <a class="no-style item" routerLink="/tcac">Reporting Animal Cruelty</a>
+        <a class="no-style item" routerLink="/tcac">Feral Cats and TNR</a>
+        <a class="no-style item" routerLink="/tcac">Wildlife</a>
+        <a class="no-style item" routerLink="/surrender-pet">Surrendering a Pet</a>
+        <a class="no-style item" routerLink="/spay-neuter">Spay and Neuter Program</a>
+        <a class="no-style item" routerLink="/education">Humane Education</a>
+        <a class="no-style item" routerLink="/classes">Classes</a>
+        <a class="no-style item" routerLink="/rabies-clinics">Free Rabies Clinic</a>
+        <a class="no-style item" routerLink="/vet-care">Veterinary Care</a>
+        <a class="no-style item" routerLink="/partners">Our Partners</a>
+    </div>
+</div>
+
+<div #collaspibleSection class="collapsible-section">
+    <div class="collapsible-header" (click)="showMenu(3)">
+        <div>
+            Get Involved
+        </div>
+        <div>
+            <i #navMenuToggle class="fa fa-chevron-down" aria-hidden="true"></i>
+        </div>
+    </div>
+    <div #navMenuBody class="collapsible-body">
+        <a class="no-style item" routerLink="/about">Our History and Mission</a>
+        <a class="no-style item" routerLink="/staff">Our Staff</a>
+        <a class="no-style item" routerLink="/board">Board of Directors</a>
+        <a class="no-style item" routerLink="/jobs">Job Openings</a>
+        <a class="no-style item" routerLink="/stats">Statistics</a>
+        <a class="no-style item" routerLink="/volunteer">Volunteer Opportunities</a>
+        <a class="no-style item" routerLink="/foster-family">Become a Foster Family</a>
+    </div>
+</div>
+
+<div class="footer">
+    <i class="fa fa-facebook-official" aria-hidden="true"></i>
+    <i class="fa fa-twitter" aria-hidden="true"></i>
+    <i class="fa fa-instagram" aria-hidden="true"></i>
+</div>

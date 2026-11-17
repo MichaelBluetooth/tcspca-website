@@ -3,18 +3,20 @@ import { NavigationEnd, Router, RouterModule } from '@angular/router';
 import { filter } from 'rxjs';
 import { NavPanelComponent } from '../nav-panel/nav-panel.component';
 import { CommonModule } from '@angular/common';
+import { MobileNavMenuComponent } from '../mobile-nav-menu/mobile-nav-menu.component';
 
 export type MENU_ITEM_TYPES = 'adopt' | 'support' | 'services' | 'get-involved' | null;
 
 @Component({
   selector: 'spca-header-menu',
-  imports: [CommonModule, RouterModule, NavPanelComponent],
+  imports: [CommonModule, RouterModule, NavPanelComponent, MobileNavMenuComponent],
   templateUrl: './header-menu.component.html',
   styleUrl: './header-menu.component.scss'
 })
 export class HeaderMenuComponent {
   @ViewChildren('.menu-item', { read: ElementRef }) menuItems!: QueryList<ElementRef>;
 
+  showMobileMenu = false;
   selectedMenu: MENU_ITEM_TYPES = null;
   previousItem: any;
 
