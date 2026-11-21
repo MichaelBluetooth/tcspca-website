@@ -17,9 +17,6 @@
             <a class="no-style menu-item link" routerLink="/all-animals">
                 All Available Animals
             </a>
-            <a class="no-style menu-item link" routerLink="/tcac">
-                Report a Stray
-            </a>
         </ng-container>
         <ng-container *ngIf="selectedMenu === 'support'">
             <h3 class="menu-header">Support the SPCA</h3>
@@ -27,7 +24,7 @@
                 Make a gift online
             </a>
             <a class="no-style menu-item link" routerLink="/tiles">
-                Memorial and tribute tiles
+                Memorial/Tribute tiles
             </a>
             <a class="no-style menu-item link" routerLink="/planned-giving">
                 Planned Giving
@@ -46,13 +43,23 @@
             </a>
         </ng-container>
         <ng-container *ngIf="selectedMenu === 'services'">
-            <h3 class="menu-header">SPCA Services</h3>
+            <h3 class="menu-header">Shelter Services</h3>
             <a class="no-style menu-item link" routerLink="/lost-and-found">
                 Lost or found animals
             </a>
-            <a class="no-style menu-item link" routerLink="/tcac">
-                Tompkins County Animal Control
+            <a class="no-style menu-item link" routerLink="/surrender-pet">
+                Support & Intake
             </a>
+            <a class="no-style menu-item link" routerLink="/spay-neuter">
+                Low-cost Spay/Neuter
+            </a>
+            <a class="no-style menu-item link" routerLink="/rabies-clinics">
+                Free rabies clinics
+            </a>
+            <a class="no-style menu-item link" routerLink="/vet-care">
+                Veterinary care
+            </a>
+            <h3 class="menu-header">Animal Control</h3>
             <a class="no-style menu-item link" routerLink="/tcac">
                 Stray Dogs and Injured Animals
             </a>
@@ -64,27 +71,6 @@
             </a>
             <a class="no-style menu-item link" routerLink="/tcac">
                 Wildlife
-            </a>
-            <a class="no-style menu-item link" routerLink="/surrender-pet">
-                Surrendering a Pet
-            </a>
-            <a class="no-style menu-item link" routerLink="/spay-neuter">
-                Spay and neuter program
-            </a>
-            <a class="no-style menu-item link" routerLink="/education">
-                Humane education and youth
-            </a>
-            <a class="no-style menu-item link" routerLink="/classes">
-                Training and Socialization Classes
-            </a>
-            <a class="no-style menu-item link" routerLink="/rabies-clinics">
-                Free rabies clinics
-            </a>
-            <a class="no-style menu-item link" routerLink="/vet-care">
-                Veterinary care
-            </a>
-            <a class="no-style menu-item link" routerLink="/partners">
-                Our partners
             </a>
         </ng-container>
         <ng-container *ngIf="selectedMenu === 'get-involved'">
@@ -113,7 +99,9 @@
             <a class="no-style menu-item link" routerLink="/jobs">
                 Job Openings
             </a>
-            
+            <a class="no-style menu-item link" routerLink="/partners">
+                Our partners
+            </a>
 
 
         </ng-container>

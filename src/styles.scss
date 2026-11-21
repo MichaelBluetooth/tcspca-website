@@ -1,8 +1,9 @@
-html, body {
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-    font-family: "museo-sans", sans-serif;
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  font-family: "museo-sans", sans-serif;
 }
 
 .no-style {
@@ -23,11 +24,15 @@ html, body {
 }
 
 .pet-point-container {
-    width: 100%;
+  width: 100%;
 
-    iframe {
-        height: 100%;
-        width: 100%;
-        min-height: 700px;
-    }
+  iframe {
+    height: 100%;
+    width: 100%;
+    min-height: 700px;
+  }
+}
+
+.pill-button {
+  text-decoration: none;
 }
